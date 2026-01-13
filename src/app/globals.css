@@ -1,26 +1,33 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Custom Orange Theme */
+  --color-brand-orange-400: #fb923c;
+  --color-brand-orange-500: #f97316;
+  --color-brand-orange-600: #ea580c;
+  
+  /* Yellow Accents */
+  --color-brand-yellow-400: #facc15;
+  --color-brand-yellow-500: #eab308;
+  
+  /* Red for Urgent */
+  --color-brand-red-500: #ef4444;
+  
+  /* Dark Sidebar - Neutral tones */
+  --color-sidebar-dark: #171717;
+  --color-sidebar-bg: #262626;
+  --color-sidebar-text: #a3a3a3;
+  --color-sidebar-hover: #404040;
+  
+  /* Cards */
+  --color-card-bg: #ffffff;
+  --color-card-border: #e5e5e5;
+  
+  /* Typography */
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+  
+  /* Spacing */
+  --spacing-section: 2rem;
+  --spacing-card: 1.5rem;
 }
